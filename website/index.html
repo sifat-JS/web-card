@@ -1,0 +1,248 @@
+<!DOCTYPE html> <!-- Declare HTML5 document -->
+<html lang="en"> <!-- Set page language to English -->
+<head>
+  <meta charset="UTF-8"> <!-- Character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensure mobile responsive -->
+  <title>Quality Shop</title> <!-- Browser‑tab title -->
+
+  <!-- ===== Google Fonts (Poppins) ===== -->
+  <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Pre‑connect for speed -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Font link -->
+
+  <!-- ===== Font Awesome Icons ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Icons -->
+  <link rel="shortcut icon" href="m3.png"type="img/x-icon">
+  
+
+  <!-- ===== External CSS ===== -->
+  <link rel="stylesheet" href="web.css"> <!-- Our stylesheet -->
+</head>
+<body> <!-- Page content starts -->
+ 
+  <!-- ===== Header & Navigation ===== -->
+  <header> <!-- Sticky site header -->
+    <div class="brand">Quality<span>Shop</span></div> <!-- Logo text -->
+
+    <!-- Hamburger toggle (checkbox hack) -->
+    <input type="checkbox" id="nav-toggle"> <!-- Hidden checkbox -->
+    <label for="nav-toggle" class="hamburger"> <!-- 3‑bar icon -->
+      <i class="fas fa-bars"></i> <!-- Font Awesome bars -->
+    </label>
+
+    <!-- Navigation links -->
+    <nav> <!-- Main nav -->
+          
+      <ul class="nav-list"> <!-- Unordered list -->
+        <li><a href="#home">Home</a></li> <!-- Link 1 -->
+        <li><a href="#categories">Categories</a></li> <!-- Link 2 -->
+        <li><a href="#products">Products</a></li> <!-- Link 3 -->
+        <li><a href="#testimonials">Testimonials</a></li> <!-- Link 4 -->
+        <li><a href="#contact">Contact</a></li> <!-- Link 5 -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 
+  
+  ========================================================= -->
+
+  <!-- ===== Hero Section ===== -->
+  <section id="home" class="hero"> <!-- Full‑width banner -->
+    <div class="overlay"> <!-- Dark overlay for text contrast -->
+      <h1>Discover Your Style</h1> <!-- Main headline -->
+      <p>Top trends • Best prices • Fast delivery</p> <!-- Tagline -->
+      <a href="#products" class="btn-primary">Shop Now</a> <!-- Call‑to‑action -->
+      <a href="🐙https://github.com/jamilsarker"target="-blank">Home</a>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+
+  <!-- ===== Category Cards ===== -->
+  <section id="categories" class="categories"> <!-- Category section -->
+    <h2 class="section-title">Shop by Category</h2> <!-- Title -->
+    <div class="cat-grid"> <!-- 3‑card grid -->
+      <!-- Category 1 -->
+      <article class="cat-card"> <!-- Card container -->
+        <i class="fas fa-tshirt cat-icon"></i> <!-- Icon -->
+        <h3>Fashion</h3> <!-- Title -->
+        <p>Clothing, shoes & accessories</p> <!-- Short text -->
+      </article>
+      <!-- Category 2 -->
+      <article class="cat-card">
+        <i class="fas fa-laptop cat-icon"></i>
+        <h3>Electronics</h3>
+        <p>Laptops, phones & gadgets</p>
+      </article>
+      <!-- Category 3 -->
+      <article class="cat-card">
+        <i class="fas fa-chair cat-icon"></i>
+        <h3>Home & Living</h3>
+        <p>Furniture, décor & more</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+
+  <!-- ===== Product Grid ===== -->
+  <section id="products" class="products"> <!-- Product section -->
+    <h2 class="section-title">Featured Products</h2> <!-- Title -->
+    <div class="prod-grid"> <!-- CSS‑grid container -->
+
+      <!-- Product card template (×6) -->
+      <article class="prod-card"> <!-- Single product -->
+        <img src="B.jpeg" alt="Product 1"> <!-- Product pic -->
+        <h4 class="prod-name">Smart Watch X1</h4> <!-- Name -->
+        <div class="price">$99.00</div> <!-- Price -->
+        <div class="stars"> <!-- Rating stars -->
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <button class="btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button> <!-- Cart button -->
+      </article>
+
+      <!-- Duplicate the above block with different data (2‑6) -->
+      <article class="prod-card">
+        <img src="i.jpeg" alt="Product 2">
+        <h4 class="prod-name">Leather Backpack</h4>
+        <div class="price">$79.00</div>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <button class="btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </article>
+
+      <article class="prod-card">
+        <img src="l.jpeg" alt="Product 3">
+        <h4 class="prod-name">Noise‑Cancelling Headphones</h4>
+        <div class="price">$129.00</div>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <button class="btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </article>
+
+      <article class="prod-card">
+        <img src="S.jpeg" alt="Product 4">
+        <h4 class="prod-name">designer Sneakers</h4>
+        <div class="price">$110.00</div>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <button class="btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </article>
+
+      <article class="prod-card">
+        <img src="B.jpeg" alt="Product 5">
+        <h4 class="prod-name">Gaming Keyboard</h4>
+        <div class="price">$69.00</div>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <button class="btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </article>
+
+      <article class="prod-card">
+        <img src="i.jpeg" alt="Product 6">
+        <h4 class="prod-name">Minimal Desk Lamp</h4>
+        <div class="price">$45.00</div>
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <button class="btn-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+
+  <!-- ===== Testimonials ===== -->
+  <section id="testimonials" class="testimonials"> <!-- Feedback strip -->
+    <h2 class="section-title">What Our Customers Say</h2> <!-- Title -->
+    <div class="testi-wrapper"> <!-- Horizontal scroll container -->
+      <!-- Testimonial 1 -->
+      <figure class="testi-item"> <!-- Item -->
+        <img src="M1.jpeg" alt="Customer 1"> <!-- Avatar -->
+        <blockquote>"Fast shipping and awesome quality!"</blockquote> <!-- Quote -->
+        <figcaption>— Aisha R.</figcaption> <!-- Name -->
+      </figure>
+      <!-- Testimonial 2 -->
+      <figure class="testi-item">
+        <img src="m2.jpeg" alt="Customer 2">
+        <blockquote>"Love the variety, will shop again."</blockquote>
+        <figcaption>— Rahim H.</figcaption>
+      </figure>
+      <!-- Testimonial 3 -->
+      <figure class="testi-item">
+        <img src="m3.png" alt="Customer 3">
+        <blockquote>"Customer service was super helpful."</blockquote>
+        <figcaption>— Nadia S.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ========================================================= -->
+
+  <!-- ===== Newsletter CTA ===== -->
+  <section id="contact" class="newsletter"> <!-- Signup area -->
+    <h2 class="section-title">Join Our Newsletter</h2> <!-- Title -->
+    <p>Get updates on sales and new arrivals.</p> <!-- Subtitle -->
+    <form class="news-form"> <!-- Email form -->
+      <input type="email" placeholder="Enter your email" required> <!-- Email field -->
+      <button type="submit" class="btn-primary"><i class="fas fa-paper-plane"></i> Subscribe</button> <!-- Submit -->
+    </form>
+  </section>
+
+  <!-- ========================================================= -->
+
+  <!-- ===== Footer ===== -->
+  <footer> <!-- Site footer -->
+    <div class="footer-top"> <!-- 3‑column grid -->
+      <!-- About -->
+      <div class="foot-col">
+        <h4>About</h4>
+        <p>QualityShop delivers premium products at unbeatable prices all over Bangladesh.</p>
+      </div>
+      <!-- Quick links -->
+      <div class="foot-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Newsletter</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="foot-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone-alt"></i> +880 1234 567 890</p>
+        <p><i class="fas fa-envelope"></i> support@qualityshop.com</p>
+        <div class="social"> <!-- Social icons -->
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"> <!-- Copyright -->
+      © 2025 QualityShop — All rights reserved.
+     
+    </div>
+  </footer>
+  
+</body> <!-- Page content ends -->
+</html>
